@@ -1,6 +1,6 @@
 import {Button, Container, TextField} from "@mui/material";
 export const Main = () => {
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault()
     console.log('Handle')
   }
