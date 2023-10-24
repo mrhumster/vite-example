@@ -30,6 +30,6 @@ If you are developing a production application, we recommend updating the config
 ## Build
 
 ```shell
-vite build
-http-server ./dist/
+$ npm run build
+$ npm run preview
 ```
