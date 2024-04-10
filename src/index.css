@@ -7,7 +7,9 @@ body {
   padding: 0;
   margin: 0;
 }
-
+.radial-blue {
+  background: radial-gradient(lightyellow, skyblue);
+}
 
 .footer {
   background: #ffffff;

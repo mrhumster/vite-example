@@ -1,25 +1,27 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import {Login} from "./pages/Login.tsx";
-import {Homepage} from "./pages/Homepage.tsx";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Login } from "./pages/Login.tsx";
+import { Rocket } from "./pages/Rocket.tsx";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
     {
-      path: '/login',
-      element: <Login/>
+      path: "/login",
+      element: <Login />,
     },
+    {
+      path: "/",
+      element: <Rocket />,
+    },
+  ],
   {
-    path: '/',
-    element: <Homepage />
-  }
-  ],{
-    basename: "/vite-example"
-  }
-)
-ReactDOM.createRoot(document.getElementById('root')!).render(
+    basename: "/vite-example",
+  },
+);
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>,
-)
+);
